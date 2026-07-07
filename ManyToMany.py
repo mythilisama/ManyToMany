@@ -216,8 +216,8 @@ def predict_sentence(sentence):
 # =====================================
 
 if not os.path.exists(MODEL_FILE):
-
-    train_model()
+    st.error("Model file not found.")
+    st.stop()
 
 
 # =====================================
